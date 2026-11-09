@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">08.42</string>
+    <string name="page_title">Cari kelas kosong</string>
+    <string name="page_subtitle">Pilih ruang yang cocok untukmu</string>
+    <string name="label">Menampilkan 3 dari 6 ruang · Gulir untuk lainnya</string>
+    <string name="filter_label">Semua</string>
+    <string name="sort_option">Kapasitas ↕</string>
+    <string name="room_number">A-201</string>
+    <string name="location">Gedung A · Lantai 2</string>
+    <string name="status">Dipakai</string>
+    <string name="destination_label">Akun</string>
+</resources>

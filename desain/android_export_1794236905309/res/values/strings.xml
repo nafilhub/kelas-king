@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">08.44</string>
+    <string name="page_title">Atur perkuliahan</string>
+    <string name="page_subtitle">Booking · Langkah 1 dari 2</string>
+    <string name="room">A-203</string>
+    <string name="room_location">Gedung A · Lantai 2 · 40 kursi</string>
+    <string name="status">Tersedia</string>
+    <string name="label">Slot akan diperiksa lagi sebelum konfirmasi booking.</string>
+    <string name="package_label">Pilih paket SKS</string>
+    <string name="duration_rule">1 SKS = 50 menit</string>
+    <string name="sks_count">4 SKS</string>
+    <string name="minutes">= 200 menit</string>
+    <string name="calculation_label">SELESAI OTOMATIS · 150 MENIT</string>
+    <string name="calculated_schedule">09.00 → 11.30</string>
+    <string name="action_label">Lanjut ke QRIS simulasi</string>
+    <string name="destination_label">Akun</string>
+</resources>

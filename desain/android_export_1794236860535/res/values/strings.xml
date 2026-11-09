@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">08.42</string>
+    <string name="page_title">Smart Class</string>
+    <string name="page_subtitle">BOOKING SYSTEM</string>
+    <string name="greeting_title">Pagi, Nadia 👋</string>
+    <string name="today">Senin, 02 November 2026</string>
+    <string name="status">Real-time</string>
+    <string name="label">A-203 tersedia hingga 12.00 · Baru diperbarui</string>
+    <string name="available_total">14</string>
+    <string name="occupied_count">8 dipakai</string>
+    <string name="maintenance_count">2 perawatan</string>
+    <string name="update_time">Diperbarui 08.42.05</string>
+    <string name="section_action">Lihat semua</string>
+    <string name="destination_label">Akun</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">08.42</string>
+    <string name="page_title">Scan QR ruang</string>
+    <string name="page_subtitle">Kenali kelas lewat QR di pintu</string>
+    <string name="mode_label">Daftar kelas</string>
+    <string name="status">Pratinjau pemindai</string>
+    <string name="plaque_label">RUANG A-203</string>
+    <string name="qr_type">CONTOH QR RUANG</string>
+    <string name="label">QR ruang hanya untuk identifikasi kelas, bukan QRIS pembayaran. QR sulit terbaca? Gunakan mode daftar.</string>
+    <string name="action_label">Pilih dari daftar kelas</string>
+    <string name="destination_label">Akun</string>
+</resources>

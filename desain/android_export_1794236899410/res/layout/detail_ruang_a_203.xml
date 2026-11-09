@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3F6F9">
+
+    <!-- Frame: Detail ruang A-203 (412x960) -->
+
+    <!-- FRAME: Android status -->
+    <LinearLayout
+        android:id="@+id/android_status"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="32dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="0dp"
+        android:paddingRight="26dp"
+        android:paddingBottom="0dp">
+
+        <!-- TEXT: Device time -->
+        <TextView
+            android:id="@+id/device_time"
+            android:text="08.42"
+            android:textSize="12sp"
+            android:textColor="#FF10243B"
+            android:gravity="start"
+            android:fontFamily="Inter"
+        android:layout_width="33dp"
+        android:layout_height="15dp" />
+
+        <!-- FRAME: Connectivity -->
+        <LinearLayout
+            android:id="@+id/connectivity"
+            android:orientation="horizontal"
+        android:layout_width="57dp"
+        android:layout_height="17dp">
+
+            <!-- FRAME: signal -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/signal"
+        android:layout_width="14dp"
+        android:layout_height="14dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="12dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FRAME: wifi -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wifi"
+        android:layout_width="14dp"
+        android:layout_height="14dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="12dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FRAME: battery-full -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/battery_full"
+        android:layout_width="17dp"
+        android:layout_height="17dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="14dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: App bar -->
+    <LinearLayout
+        android:id="@+id/app_bar"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="88dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="0dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="0dp">
+
+        <!-- FRAME: Navigation action -->
+        <LinearLayout
+            android:id="@+id/navigation_action"
+            android:orientation="horizontal"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+            android:background="@drawable/bg_rounded">
+
+            <!-- FRAME: arrow-left -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/arrow_left"
+        android:layout_width="22dp"
+        android:layout_height="22dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Page identity -->
+        <LinearLayout
+            android:id="@+id/page_identity"
+            android:orientation="vertical"
+        android:layout_width="254dp"
+        android:layout_height="40dp">
+
+            <!-- TEXT: Page title -->
+            <TextView
+                android:id="@+id/page_title"
+                android:text="Detail kelas"
+                android:textSize="20sp"
+                android:textColor="#FF10243B"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="254dp"
+        android:layout_height="24dp" />
+
+            <!-- TEXT: Page subtitle -->
+            <TextView
+                android:id="@+id/page_subtitle"
+                android:text="Gedung A · Fakultas Teknologi"
+                android:textSize="11sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="254dp"
+        android:layout_height="13dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Help action -->
+        <LinearLayout
+            android:id="@+id/help_action"
+            android:orientation="horizontal"
+        android:layout_width="44dp"
+        android:layout_height="44dp">
+
+            <!-- FRAME: circle-help -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/circle_help"
+        android:layout_width="22dp"
+        android:layout_height="22dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Page content -->
+    <LinearLayout
+        android:id="@+id/page_content"
+        android:orientation="vertical"
+        android:layout_width="412dp"
+        android:layout_height="744dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="8dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="24dp">
+
+        <!-- FRAME: Information card -->
+        <LinearLayout
+            android:id="@+id/information_card"
+            android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="140dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="18dp"
+            android:paddingTop="18dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="18dp">
+
+            <!-- FRAME: Room overview -->
+            <LinearLayout
+                android:id="@+id/room_overview"
+                android:orientation="horizontal"
+        android:layout_width="328dp"
+        android:layout_height="67dp">
+
+                <!-- FRAME: Room identity -->
+                <LinearLayout
+                    android:id="@+id/room_identity"
+                    android:orientation="vertical"
+        android:layout_width="160dp"
+        android:layout_height="67dp">
+
+                    <!-- TEXT: Room code -->
+                    <TextView
+                        android:id="@+id/room_code"
+                        android:text="A-203"
+                        android:textSize="40sp"
+                        android:textColor="#FFFFFFFF"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="114dp"
+        android:layout_height="48dp" />
+
+                    <!-- TEXT: Room location -->
+                    <TextView
+                        android:id="@+id/room_location"
+                        android:text="Lantai 2 · Ruang perkuliahan"
+                        android:textSize="12sp"
+                        android:textColor="#FF9CB1C3"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="160dp"
+        android:layout_height="15dp" />
+                </LinearLayout>
+
+                <!-- FRAME: Room illustration icon -->
+                <LinearLayout
+                    android:id="@+id/room_illustration_icon"
+                    android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+                    android:background="@drawable/bg_rounded">
+
+                    <!-- FRAME: door-open -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/door_open"
+        android:layout_width="32dp"
+        android:layout_height="32dp">
+
+                        <!-- VECTOR: Vector -->
+                        <ImageView
+                            android:id="@+id/vector"
+                            android:src="@drawable/ic_vector"
+                            android:scaleType="fitXY"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Room availability -->
+            <LinearLayout
+                android:id="@+id/room_availability"
+                android:orientation="horizontal"
+        android:layout_width="328dp"
+        android:layout_height="23dp">
+
+                <!-- FRAME: Status badge -->
+                <LinearLayout
+                    android:id="@+id/status_badge"
+                    android:orientation="horizontal"
+        android:layout_width="121dp"
+        android:layout_height="23dp"
+                    android:background="@drawable/bg_rounded"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp">
+
+                    <!-- ELLIPSE: Status indicator -->
+                    <ImageView
+                        android:id="@+id/status_indicator"
+                        android:src="@drawable/ic_status_indicator"
+                        android:scaleType="fitXY"
+        android:layout_width="5dp"
+        android:layout_height="5dp" />
+
+                    <!-- TEXT: Status -->
+                    <TextView
+                        android:id="@+id/status"
+                        android:text="Kosong sekarang"
+                        android:textSize="11sp"
+                        android:textColor="#FFFFFFFF"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="90dp"
+        android:layout_height="13dp" />
+                </LinearLayout>
+
+                <!-- TEXT: Free until -->
+                <TextView
+                    android:id="@+id/free_until"
+                    android:text="Hingga 12.00"
+                    android:textSize="11sp"
+                    android:textColor="#FF47E0CB"
+                    android:gravity="start"
+                    android:fontFamily="Inter"
+        android:layout_width="69dp"
+        android:layout_height="13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Facilities -->
+        <LinearLayout
+            android:id="@+id/facilities"
+            android:orientation="horizontal"
+        android:layout_width="364dp"
+        android:layout_height="72dp">
+
+            <!-- FRAME: Facility -->
+            <LinearLayout
+                android:id="@+id/facility"
+                android:orientation="vertical"
+        android:layout_width="85dp"
+        android:layout_height="72dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: users -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/users"
+        android:layout_width="21dp"
+        android:layout_height="21dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- TEXT: Facility label -->
+                <TextView
+                    android:id="@+id/facility_label"
+                    android:text="40 kursi"
+                    android:textSize="10sp"
+                    android:textColor="#FF67788A"
+                    android:gravity="start"
+                    android:fontFamily="Inter"
+        android:layout_width="39dp"
+        android:layout_height="12dp" />
+            </LinearLayout>
+
+            <!-- FRAME: Facility -->
+            <LinearLayout
+                android:id="@+id/facility"
+                android:orientation="vertical"
+        android:layout_width="85dp"
+        android:layout_height="72dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: snowflake -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/snowflake"
+        android:layout_width="21dp"
+        android:layout_height="21dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- TEXT: Facility label -->
+                <TextView
+                    android:id="@+id/facility_label"
+                    android:text="AC"
+                    android:textSize="10sp"
+                    android:textColor="#FF67788A"
+                    android:gravity="start"
+                    android:fontFamily="Inter"
+        android:layout_width="14dp"
+        android:layout_height="12dp" />
+            </LinearLayout>
+
+            <!-- FRAME: Facility -->
+            <LinearLayout
+                android:id="@+id/facility"
+                android:orientation="vertical"
+        android:layout_width="85dp"
+        android:layout_height="72dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: projector -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/projector"
+        android:layout_width="21dp"
+        android:layout_height="21dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="18dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- TEXT: Facility label -->
+                <TextView
+                    android:id="@+id/facility_label"
+                    android:text="Proyektor"
+                    android:textSize="10sp"
+                    android:textColor="#FF67788A"
+                    android:gravity="start"
+                    android:fontFamily="Inter"
+        android:layout_width="46dp"
+        android:layout_height="12dp" />
+            </LinearLayout>
+
+            <!-- FRAME: Facility -->
+            <LinearLayout
+                android:id="@+id/facility"
+                android:orientation="vertical"
+        android:layout_width="85dp"
+        android:layout_height="72dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: wifi -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/wifi"
+        android:layout_width="21dp"
+        android:layout_height="21dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="18dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- TEXT: Facility label -->
+                <TextView
+                    android:id="@+id/facility_label"
+                    android:text="Wi-Fi"
+                    android:textSize="10sp"
+                    android:textColor="#FF67788A"
+                    android:gravity="start"
+                    android:fontFamily="Inter"
+        android:layout_width="25dp"
+        android:layout_height="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Section heading -->
+        <LinearLayout
+            android:id="@+id/section_heading"
+            android:orientation="horizontal"
+        android:layout_width="364dp"
+        android:layout_height="25dp">
+
+            <!-- TEXT: Label -->
+            <TextView
+                android:id="@+id/label"
+                android:text="Jadwal ketersediaan"
+                android:textSize="17sp"
+                android:textColor="#FF10243B"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="290dp"
+        android:layout_height="25dp" />
+
+            <!-- TEXT: Section action -->
+            <TextView
+                android:id="@+id/section_action"
+                android:text="02 Nov 2026"
+                android:textSize="12sp"
+                android:textColor="#FF007F7B"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="74dp"
+        android:layout_height="15dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Room timeline -->
+        <LinearLayout
+            android:id="@+id/room_timeline"
+            android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="223dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="18dp"
+            android:paddingTop="18dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="18dp">
+
+            <!-- FRAME: Schedule slot -->
+            <LinearLayout
+                android:id="@+id/schedule_slot"
+                android:orientation="horizontal"
+        android:layout_width="328dp"
+        android:layout_height="53dp">
+
+                <!-- FRAME: Timeline marker -->
+                <LinearLayout
+                    android:id="@+id/timeline_marker"
+                    android:orientation="vertical"
+        android:layout_width="10dp"
+        android:layout_height="53dp">
+
+                    <!-- RECTANGLE: Status mark -->
+                    <LinearLayout
+                        android:id="@+id/status_mark"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+                        android:background="@drawable/bg_rounded" />
+
+                    <!-- RECTANGLE: Timeline connector -->
+                    <LinearLayout
+                        android:id="@+id/timeline_connector"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+                        android:background="#FFDFE7EE" />
+                </LinearLayout>
+
+                <!-- FRAME: Schedule content -->
+                <LinearLayout
+                    android:id="@+id/schedule_content"
+                    android:orientation="vertical"
+        android:layout_width="306dp"
+        android:layout_height="53dp">
+
+                    <!-- TEXT: Time window -->
+                    <TextView
+                        android:id="@+id/time_window"
+                        android:text="08.00–12.00"
+                        android:textSize="11sp"
+                        android:textColor="#FF007F7B"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="64dp"
+        android:layout_height="13dp" />
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="Tersedia untuk booking"
+                        android:textSize="13sp"
+                        android:textColor="#FF10243B"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="306dp"
+        android:layout_height="19dp" />
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="4 jam tersedia · Termasuk waktu pilihanmu"
+                        android:textSize="10sp"
+                        android:textColor="#FF67788A"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="306dp"
+        android:layout_height="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Schedule slot -->
+            <LinearLayout
+                android:id="@+id/schedule_slot"
+                android:orientation="horizontal"
+        android:layout_width="328dp"
+        android:layout_height="53dp">
+
+                <!-- FRAME: Timeline marker -->
+                <LinearLayout
+                    android:id="@+id/timeline_marker"
+                    android:orientation="vertical"
+        android:layout_width="10dp"
+        android:layout_height="53dp">
+
+                    <!-- RECTANGLE: Status mark -->
+                    <LinearLayout
+                        android:id="@+id/status_mark"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+                        android:background="@drawable/bg_rounded" />
+
+                    <!-- RECTANGLE: Timeline connector -->
+                    <LinearLayout
+                        android:id="@+id/timeline_connector"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+                        android:background="#FFDFE7EE" />
+                </LinearLayout>
+
+                <!-- FRAME: Schedule content -->
+                <LinearLayout
+                    android:id="@+id/schedule_content"
+                    android:orientation="vertical"
+        android:layout_width="306dp"
+        android:layout_height="53dp">
+
+                    <!-- TEXT: Time window -->
+                    <TextView
+                        android:id="@+id/time_window"
+                        android:text="12.00–12.50"
+                        android:textSize="11sp"
+                        android:textColor="#FF96600E"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="62dp"
+        android:layout_height="13dp" />
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="Matematika Diskrit"
+                        android:textSize="13sp"
+                        android:textColor="#FF10243B"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="306dp"
+        android:layout_height="19dp" />
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="1 SKS · Booking terjadwal"
+                        android:textSize="10sp"
+                        android:textColor="#FF67788A"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="306dp"
+        android:layout_height="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Schedule slot -->
+            <LinearLayout
+                android:id="@+id/schedule_slot"
+                android:orientation="horizontal"
+        android:layout_width="328dp"
+        android:layout_height="53dp">
+
+                <!-- FRAME: Timeline marker -->
+                <LinearLayout
+                    android:id="@+id/timeline_marker"
+                    android:orientation="vertical"
+        android:layout_width="10dp"
+        android:layout_height="53dp">
+
+                    <!-- RECTANGLE: Status mark -->
+                    <LinearLayout
+                        android:id="@+id/status_mark"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+                        android:background="@drawable/bg_rounded" />
+
+                    <!-- RECTANGLE: Timeline connector -->
+                    <LinearLayout
+                        android:id="@+id/timeline_connector"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+                        android:background="#FFDFE7EE" />
+                </LinearLayout>
+
+                <!-- FRAME: Schedule content -->
+                <LinearLayout
+                    android:id="@+id/schedule_content"
+                    android:orientation="vertical"
+        android:layout_width="306dp"
+        android:layout_height="53dp">
+
+                    <!-- TEXT: Time window -->
+                    <TextView
+                        android:id="@+id/time_window"
+                        android:text="12.50–17.00"
+                        android:textSize="11sp"
+                        android:textColor="#FF007F7B"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="61dp"
+        android:layout_height="13dp" />
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="Tersedia untuk booking"
+                        android:textSize="13sp"
+                        android:textColor="#FF10243B"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="306dp"
+        android:layout_height="19dp" />
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="4 jam 10 menit tersedia"
+                        android:textSize="10sp"
+                        android:textColor="#FF67788A"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="306dp"
+        android:layout_height="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Helpful notice -->
+        <LinearLayout
+            android:id="@+id/helpful_notice"
+            android:orientation="horizontal"
+        android:layout_width="364dp"
+        android:layout_height="60dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="13dp"
+            android:paddingTop="13dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="13dp">
+
+            <!-- FRAME: info -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/info"
+        android:layout_width="18dp"
+        android:layout_height="18dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- TEXT: Label -->
+            <TextView
+                android:id="@+id/label"
+                android:text="Pilihan 09.00–11.30 tersedia. Jika slot penuh, pilih jam lain atau kembali ke daftar kelas."
+                android:textSize="12sp"
+                android:textColor="#FF007F7B"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="310dp"
+        android:layout_height="34dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Action -->
+        <LinearLayout
+            android:id="@+id/action"
+            android:orientation="horizontal"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="18dp"
+            android:paddingTop="0dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="0dp">
+
+            <!-- TEXT: Action label -->
+            <TextView
+                android:id="@+id/action_label"
+                android:text="Booking kelas ini"
+                android:textSize="14sp"
+                android:textColor="#FFFFFFFF"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="114dp"
+        android:layout_height="17dp" />
+
+            <!-- FRAME: arrow-right -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/arrow_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Primary navigation -->
+    <LinearLayout
+        android:id="@+id/primary_navigation"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="72dp"
+        android:background="#FFFFFFFF"
+        android:paddingLeft="15dp"
+        android:paddingTop="0dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="0dp">
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: house -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/house"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Beranda"
+                android:textSize="10sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="40dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: layout-grid -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_grid"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Kelas"
+                android:textSize="10sp"
+                android:textColor="#FF007F7B"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="27dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: ticket -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ticket"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="17dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Booking"
+                android:textSize="10sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="39dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: user-round -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/user_round"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="13dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Akun"
+                android:textSize="10sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="25dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Android gesture area -->
+    <LinearLayout
+        android:id="@+id/android_gesture_area"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="24dp"
+        android:background="#FFFFFFFF">
+
+        <!-- RECTANGLE: Gesture handle -->
+        <LinearLayout
+            android:id="@+id/gesture_handle"
+        android:layout_width="104dp"
+        android:layout_height="4dp"
+            android:background="@drawable/bg_rounded" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
