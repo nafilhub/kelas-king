@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">08.45</string>
+    <string name="page_title">QRIS simulasi</string>
+    <string name="page_subtitle">Booking · Langkah 2 dari 2</string>
+    <string name="label">Kode kedaluwarsa? Buat ulang QRIS simulasi. Slot akan dicek kembali sebelum booking dibuat.</string>
+    <string name="expiry_countdown">04:59</string>
+    <string name="qris_logo_label">QRIS</string>
+    <string name="status">Simulasi</string>
+    <string name="field_name">Paket perkuliahan</string>
+    <string name="field_value">3 SKS · 150 menit</string>
+    <string name="action_label"> berhasil</string>
+    <string name="destination_label">Akun</string>
+</resources>

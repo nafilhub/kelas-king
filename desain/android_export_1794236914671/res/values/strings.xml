@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">08.46</string>
+    <string name="page_title">Booking berhasil</string>
+    <string name="page_subtitle">Tiket kelasmu siap digunakan</string>
+    <string name="label">Booking dimulai 09.00 dan berakhir otomatis 11.30. Kamu bisa melihat statusnya di menu Booking.</string>
+    <string name="ticket_eyebrow">SMART CLASS · E-TICKET</string>
+    <string name="booking_id">SCB-0248</string>
+    <string name="status">Terjadwal</string>
+    <string name="field_name">Pembayaran</string>
+    <string name="field_value">Simulasi berhasil</string>
+    <string name="action_label">Lihat booking saya</string>
+    <string name="destination_label">Akun</string>
+</resources>

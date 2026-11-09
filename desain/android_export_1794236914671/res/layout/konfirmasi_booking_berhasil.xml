@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3F6F9">
+
+    <!-- Frame: Konfirmasi booking berhasil (412x1008) -->
+
+    <!-- FRAME: Android status -->
+    <LinearLayout
+        android:id="@+id/android_status"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="32dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="0dp"
+        android:paddingRight="26dp"
+        android:paddingBottom="0dp">
+
+        <!-- TEXT: Device time -->
+        <TextView
+            android:id="@+id/device_time"
+            android:text="08.46"
+            android:textSize="12sp"
+            android:textColor="#FF10243B"
+            android:gravity="start"
+            android:fontFamily="Inter"
+        android:layout_width="34dp"
+        android:layout_height="15dp" />
+
+        <!-- FRAME: Connectivity -->
+        <LinearLayout
+            android:id="@+id/connectivity"
+            android:orientation="horizontal"
+        android:layout_width="57dp"
+        android:layout_height="17dp">
+
+            <!-- FRAME: signal -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/signal"
+        android:layout_width="14dp"
+        android:layout_height="14dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="12dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FRAME: wifi -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wifi"
+        android:layout_width="14dp"
+        android:layout_height="14dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="12dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FRAME: battery-full -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/battery_full"
+        android:layout_width="17dp"
+        android:layout_height="17dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="14dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: App bar -->
+    <LinearLayout
+        android:id="@+id/app_bar"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="88dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="0dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="0dp">
+
+        <!-- FRAME: Navigation action -->
+        <LinearLayout
+            android:id="@+id/navigation_action"
+            android:orientation="horizontal"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+            android:background="@drawable/bg_rounded">
+
+            <!-- FRAME: arrow-left -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/arrow_left"
+        android:layout_width="22dp"
+        android:layout_height="22dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Page identity -->
+        <LinearLayout
+            android:id="@+id/page_identity"
+            android:orientation="vertical"
+        android:layout_width="254dp"
+        android:layout_height="40dp">
+
+            <!-- TEXT: Page title -->
+            <TextView
+                android:id="@+id/page_title"
+                android:text="Booking berhasil"
+                android:textSize="20sp"
+                android:textColor="#FF10243B"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="254dp"
+        android:layout_height="24dp" />
+
+            <!-- TEXT: Page subtitle -->
+            <TextView
+                android:id="@+id/page_subtitle"
+                android:text="Tiket kelasmu siap digunakan"
+                android:textSize="11sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="254dp"
+        android:layout_height="13dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Help action -->
+        <LinearLayout
+            android:id="@+id/help_action"
+            android:orientation="horizontal"
+        android:layout_width="44dp"
+        android:layout_height="44dp">
+
+            <!-- FRAME: circle-help -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/circle_help"
+        android:layout_width="22dp"
+        android:layout_height="22dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Page content -->
+    <LinearLayout
+        android:id="@+id/page_content"
+        android:orientation="vertical"
+        android:layout_width="412dp"
+        android:layout_height="792dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="8dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="24dp">
+
+        <!-- FRAME: Success message -->
+        <LinearLayout
+            android:id="@+id/success_message"
+            android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="178dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="8dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="4dp">
+
+            <!-- FRAME: Success seal -->
+            <LinearLayout
+                android:id="@+id/success_seal"
+                android:orientation="horizontal"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: Success emblem -->
+                <LinearLayout
+                    android:id="@+id/success_emblem"
+                    android:orientation="horizontal"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+                    android:background="@drawable/bg_rounded">
+
+                    <!-- FRAME: check -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/check"
+        android:layout_width="28dp"
+        android:layout_height="28dp">
+
+                        <!-- VECTOR: Vector -->
+                        <ImageView
+                            android:id="@+id/vector"
+                            android:src="@drawable/ic_vector"
+                            android:scaleType="fitXY"
+        android:layout_width="19dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Confirmation copy -->
+            <LinearLayout
+                android:id="@+id/confirmation_copy"
+                android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="78dp">
+
+                <!-- TEXT: Label -->
+                <TextView
+                    android:id="@+id/label"
+                    android:text="Kelas sudah diamankan."
+                    android:textSize="24sp"
+                    android:textColor="#FF10243B"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:fontFamily="Inter"
+        android:layout_width="364dp"
+        android:layout_height="35dp" />
+
+                <!-- TEXT: Label -->
+                <TextView
+                    android:id="@+id/label"
+                    android:text="Sampai jumpa di A-203 pukul 09.00. Semua detail ada di tiketmu."
+                    android:textSize="13sp"
+                    android:textColor="#FF67788A"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="Inter"
+        android:layout_width="364dp"
+        android:layout_height="38dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Booking ticket -->
+        <LinearLayout
+            android:id="@+id/booking_ticket"
+            android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="414dp"
+            android:background="@drawable/bg_rounded">
+
+            <!-- FRAME: Ticket heading -->
+            <LinearLayout
+                android:id="@+id/ticket_heading"
+                android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="107dp"
+                android:background="#FF102C46"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <!-- FRAME: Ticket identity -->
+                <LinearLayout
+                    android:id="@+id/ticket_identity"
+                    android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="24dp">
+
+                    <!-- TEXT: Ticket eyebrow -->
+                    <TextView
+                        android:id="@+id/ticket_eyebrow"
+                        android:text="SMART CLASS · E-TICKET"
+                        android:textSize="10sp"
+                        android:textColor="#FF9CB1C3"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="153dp"
+        android:layout_height="12dp" />
+
+                    <!-- FRAME: ticket -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ticket"
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+
+                        <!-- VECTOR: Vector -->
+                        <ImageView
+                            android:id="@+id/vector"
+                            android:src="@drawable/ic_vector"
+                            android:scaleType="fitXY"
+        android:layout_width="20dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <!-- FRAME: Booking reference -->
+                <LinearLayout
+                    android:id="@+id/booking_reference"
+                    android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="31dp">
+
+                    <!-- TEXT: Booking ID -->
+                    <TextView
+                        android:id="@+id/booking_id"
+                        android:text="SCB-0248"
+                        android:textSize="26sp"
+                        android:textColor="#FFFFFFFF"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="133dp"
+        android:layout_height="31dp" />
+
+                    <!-- FRAME: Status badge -->
+                    <LinearLayout
+                        android:id="@+id/status_badge"
+                        android:orientation="horizontal"
+        android:layout_width="82dp"
+        android:layout_height="23dp"
+                        android:background="@drawable/bg_rounded"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp">
+
+                        <!-- ELLIPSE: Status indicator -->
+                        <ImageView
+                            android:id="@+id/status_indicator"
+                            android:src="@drawable/ic_status_indicator"
+                            android:scaleType="fitXY"
+        android:layout_width="5dp"
+        android:layout_height="5dp" />
+
+                        <!-- TEXT: Status -->
+                        <TextView
+                            android:id="@+id/status"
+                            android:text="Terjadwal"
+                            android:textSize="11sp"
+                            android:textColor="#FFFFFFFF"
+                            android:gravity="start"
+                            android:fontFamily="Inter"
+        android:layout_width="51dp"
+        android:layout_height="13dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Ticket details -->
+            <LinearLayout
+                android:id="@+id/ticket_details"
+                android:orientation="vertical"
+        android:layout_width="364dp"
+        android:layout_height="307dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <!-- FRAME: Booking summary -->
+                <LinearLayout
+                    android:id="@+id/booking_summary"
+                    android:orientation="vertical"
+        android:layout_width="324dp"
+        android:layout_height="106dp">
+
+                    <!-- FRAME: Summary row -->
+                    <LinearLayout
+                        android:id="@+id/summary_row"
+                        android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="15dp">
+
+                        <!-- TEXT: Field name -->
+                        <TextView
+                            android:id="@+id/field_name"
+                            android:text="Ruang · Gedung A"
+                            android:textSize="12sp"
+                            android:textColor="#FF67788A"
+                            android:gravity="start"
+                            android:fontFamily="Inter"
+        android:layout_width="221dp"
+        android:layout_height="15dp" />
+
+                        <!-- TEXT: Field value -->
+                        <TextView
+                            android:id="@+id/field_value"
+                            android:text="A-203 · Lantai 2"
+                            android:textSize="12sp"
+                            android:textColor="#FF10243B"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:fontFamily="Inter"
+        android:layout_width="93dp"
+        android:layout_height="15dp" />
+                    </LinearLayout>
+
+                    <!-- TEXT: Label -->
+                    <TextView
+                        android:id="@+id/label"
+                        android:text="Interaksi Manusia dan Komputer"
+                        android:textSize="17sp"
+                        android:textColor="#FF10243B"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="324dp"
+        android:layout_height="25dp" />
+
+                    <!-- FRAME: Summary row -->
+                    <LinearLayout
+                        android:id="@+id/summary_row"
+                        android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="15dp">
+
+                        <!-- TEXT: Field name -->
+                        <TextView
+                            android:id="@+id/field_name"
+                            android:text="Senin, 02 Nov 2026"
+                            android:textSize="12sp"
+                            android:textColor="#FF67788A"
+                            android:gravity="start"
+                            android:fontFamily="Inter"
+        android:layout_width="243dp"
+        android:layout_height="15dp" />
+
+                        <!-- TEXT: Field value -->
+                        <TextView
+                            android:id="@+id/field_value"
+                            android:text="09.00–11.30"
+                            android:textSize="12sp"
+                            android:textColor="#FF10243B"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:fontFamily="Inter"
+        android:layout_width="71dp"
+        android:layout_height="15dp" />
+                    </LinearLayout>
+
+                    <!-- FRAME: Summary row -->
+                    <LinearLayout
+                        android:id="@+id/summary_row"
+                        android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="15dp">
+
+                        <!-- TEXT: Field name -->
+                        <TextView
+                            android:id="@+id/field_name"
+                            android:text="Paket perkuliahan"
+                            android:textSize="12sp"
+                            android:textColor="#FF67788A"
+                            android:gravity="start"
+                            android:fontFamily="Inter"
+        android:layout_width="212dp"
+        android:layout_height="15dp" />
+
+                        <!-- TEXT: Field value -->
+                        <TextView
+                            android:id="@+id/field_value"
+                            android:text="3 SKS · 150 menit"
+                            android:textSize="12sp"
+                            android:textColor="#FF10243B"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:fontFamily="Inter"
+        android:layout_width="102dp"
+        android:layout_height="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- RECTANGLE: Ticket perforation -->
+                <LinearLayout
+                    android:id="@+id/ticket_perforation"
+        android:layout_width="324dp"
+        android:layout_height="1dp"
+                    android:background="#FFDFE7EE" />
+
+                <!-- FRAME: Summary row -->
+                <LinearLayout
+                    android:id="@+id/summary_row"
+                    android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="15dp">
+
+                    <!-- TEXT: Field name -->
+                    <TextView
+                        android:id="@+id/field_name"
+                        android:text="Pemesan"
+                        android:textSize="12sp"
+                        android:textColor="#FF67788A"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="250dp"
+        android:layout_height="15dp" />
+
+                    <!-- TEXT: Field value -->
+                    <TextView
+                        android:id="@+id/field_value"
+                        android:text="Nadia Putri"
+                        android:textSize="12sp"
+                        android:textColor="#FF10243B"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="64dp"
+        android:layout_height="15dp" />
+                </LinearLayout>
+
+                <!-- FRAME: Summary row -->
+                <LinearLayout
+                    android:id="@+id/summary_row"
+                    android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="15dp">
+
+                    <!-- TEXT: Field name -->
+                    <TextView
+                        android:id="@+id/field_name"
+                        android:text="Pembayaran"
+                        android:textSize="12sp"
+                        android:textColor="#FF67788A"
+                        android:gravity="start"
+                        android:fontFamily="Inter"
+        android:layout_width="215dp"
+        android:layout_height="15dp" />
+
+                    <!-- TEXT: Field value -->
+                    <TextView
+                        android:id="@+id/field_value"
+                        android:text="Simulasi berhasil"
+                        android:textSize="12sp"
+                        android:textColor="#FF10243B"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:fontFamily="Inter"
+        android:layout_width="99dp"
+        android:layout_height="15dp" />
+                </LinearLayout>
+
+                <!-- FRAME: Ticket barcode -->
+                <LinearLayout
+                    android:id="@+id/ticket_barcode"
+                    android:orientation="horizontal"
+        android:layout_width="324dp"
+        android:layout_height="30dp">
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FFFFFFFF" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+
+                    <!-- RECTANGLE: Barcode stripe -->
+                    <LinearLayout
+                        android:id="@+id/barcode_stripe"
+        android:layout_width="3dp"
+        android:layout_height="30dp"
+                        android:background="#FF102C46" />
+                </LinearLayout>
+
+                <!-- TEXT: Label -->
+                <TextView
+                    android:id="@+id/label"
+                    android:text="Tiket demo · Bukan bukti pembayaran resmi"
+                    android:textSize="10sp"
+                    android:textColor="#FF67788A"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="Inter"
+        android:layout_width="324dp"
+        android:layout_height="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Helpful notice -->
+        <LinearLayout
+            android:id="@+id/helpful_notice"
+            android:orientation="horizontal"
+        android:layout_width="364dp"
+        android:layout_height="60dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="13dp"
+            android:paddingTop="13dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="13dp">
+
+            <!-- FRAME: info -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/info"
+        android:layout_width="18dp"
+        android:layout_height="18dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- TEXT: Label -->
+            <TextView
+                android:id="@+id/label"
+                android:text="Booking dimulai 09.00 dan berakhir otomatis 11.30. Kamu bisa melihat statusnya di menu Booking."
+                android:textSize="12sp"
+                android:textColor="#FF007F7B"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="310dp"
+        android:layout_height="34dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Action -->
+        <LinearLayout
+            android:id="@+id/action"
+            android:orientation="horizontal"
+        android:layout_width="364dp"
+        android:layout_height="54dp"
+            android:background="@drawable/bg_rounded"
+            android:paddingLeft="18dp"
+            android:paddingTop="0dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="0dp">
+
+            <!-- TEXT: Action label -->
+            <TextView
+                android:id="@+id/action_label"
+                android:text="Lihat booking saya"
+                android:textSize="14sp"
+                android:textColor="#FFFFFFFF"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="127dp"
+        android:layout_height="17dp" />
+
+            <!-- FRAME: ticket -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ticket"
+        android:layout_width="18dp"
+        android:layout_height="18dp">
+
+                <!-- VECTOR: Vector -->
+                <ImageView
+                    android:id="@+id/vector"
+                    android:src="@drawable/ic_vector"
+                    android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Primary navigation -->
+    <LinearLayout
+        android:id="@+id/primary_navigation"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="72dp"
+        android:background="#FFFFFFFF"
+        android:paddingLeft="15dp"
+        android:paddingTop="0dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="0dp">
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: house -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/house"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Beranda"
+                android:textSize="10sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="40dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: layout-grid -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_grid"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Kelas"
+                android:textSize="10sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="26dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: ticket -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ticket"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="17dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Booking"
+                android:textSize="10sp"
+                android:textColor="#FF007F7B"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="Inter"
+        android:layout_width="40dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Navigation destination -->
+        <LinearLayout
+            android:id="@+id/navigation_destination"
+            android:orientation="vertical"
+        android:layout_width="93dp"
+        android:layout_height="68dp">
+
+            <!-- FRAME: Navigation icon -->
+            <LinearLayout
+                android:id="@+id/navigation_icon"
+                android:orientation="horizontal"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: user-round -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/user_round"
+        android:layout_width="20dp"
+        android:layout_height="20dp">
+
+                    <!-- VECTOR: Vector -->
+                    <ImageView
+                        android:id="@+id/vector"
+                        android:src="@drawable/ic_vector"
+                        android:scaleType="fitXY"
+        android:layout_width="13dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!-- TEXT: Destination label -->
+            <TextView
+                android:id="@+id/destination_label"
+                android:text="Akun"
+                android:textSize="10sp"
+                android:textColor="#FF67788A"
+                android:gravity="start"
+                android:fontFamily="Inter"
+        android:layout_width="25dp"
+        android:layout_height="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Android gesture area -->
+    <LinearLayout
+        android:id="@+id/android_gesture_area"
+        android:orientation="horizontal"
+        android:layout_width="412dp"
+        android:layout_height="24dp"
+        android:background="#FFFFFFFF">
+
+        <!-- RECTANGLE: Gesture handle -->
+        <LinearLayout
+            android:id="@+id/gesture_handle"
+        android:layout_width="104dp"
+        android:layout_height="4dp"
+            android:background="@drawable/bg_rounded" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

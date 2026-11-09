@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="device_time">10.40</string>
+    <string name="page_title">Booking aktif</string>
+    <string name="page_subtitle">SCB-0248 · Diperbarui 10.40.00</string>
+    <string name="room_code">A-203</string>
+    <string name="status">Sedang dipakai</string>
+    <string name="time_remaining">50:00</string>
+    <string name="timer_description">menit tersisa</string>
+    <string name="scheduled_end">Selesai pukul 11.30</string>
+    <string name="elapsed_time">100 menit berlalu</string>
+    <string name="total_time">Total 150 menit</string>
+    <string name="field_name">Paket perkuliahan</string>
+    <string name="field_value">3 SKS · 150 menit</string>
+    <string name="label">Ruang otomatis dilepas pukul 11.30. Rapikan kelas sebelum waktu berakhir agar siap dipakai berikutnya.</string>
+    <string name="event_time">11.30</string>
+    <string name="action_label">Lihat tiket booking</string>
+    <string name="destination_label">Akun</string>
+</resources>
